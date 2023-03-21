@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #013914;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s all ease;
+
+  &.active {
+    background: white;
+    color: black;
+  }
+  .container {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    .logo {
+      font-weight: bold;
+      font-size: 34px;
+      cursor: pointer;
+
+      .dot {
+        color: #1dbf73;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      span {
+        cursor: pointer;
+      }
+      button {
+        text-transform: capitalize;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        font-weight: 500;
+        &:hover {
+          background: #1dbf73;
+          border: 1px solid #1dbf73;
+          transition: all 0.3s ease;
+        }
+      }
+      .user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+          cursor: pointer;
+        }
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background: white;
+          border-radius: 10px;
+          border: 1px solid lightgray;
+          color: gray;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 200px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    height: 0;
+    border: 0.5px solid rgb(241, 239, 239);
+  }
+  .menu {
+    width: 1400px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+  }
+}
