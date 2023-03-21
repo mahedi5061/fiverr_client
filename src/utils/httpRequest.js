@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const httpRequest = axios.create({
-  baseURL: "http://localhost:8800/api",
+  baseURL: "https://fiverr-clone-api.onrender.com/api",
 
   // withCredentials: true,
 });
